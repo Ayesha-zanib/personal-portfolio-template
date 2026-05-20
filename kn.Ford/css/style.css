@@ -1,0 +1,560 @@
+html body {
+    overflow-x: hidden;
+    /* Yeh side scrollbar ko khatam kar dega */
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --dark-blue: #0779e4;
+    --light-blue: #3e9ff9;
+    --light-white: #e9f3fc;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+li {
+    list-style: none;
+}
+
+ul {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+
+.section-distance {
+    padding: 100px 0px;
+    background-color: #f8f8f8;
+}
+
+/* navbar section styling */
+/* ========================================================
+   1. MOBILE & TABLET DEFAULT (Hamesha Blue Rahega)
+   ======================================================== */
+.custom-navbar {
+    background-color: #0779e4 !important;
+    transition: background-color 0.3s ease, padding 0.3s ease;
+    padding: 10px 0px !important;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100vw !important;
+    left: 0 !important;
+    right: 0 !important;
+    box-sizing: border-box;
+}
+
+.navbar-toggler {
+    /* Margin right ko 0 kar dein taake ye bahar na bhagay */
+    margin-right: 0 !important;
+    /* Padding ko auto rehne dein ya halki si dein */
+    padding: 0.25rem 0.5rem !important;
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+    display: flex;
+    align-items: center;
+}
+
+.custom-navbar .container {
+    padding-right: 30px !important;
+    padding-left: 20px !important;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Toggler icon ka color white rahe */
+.navbar-toggler svg {
+    color: white;
+}
+
+/* Links, Logo aur Toggle Icon ka color white */
+.custom-navbar .nav-link,
+.custom-navbar .nav-link:focus,
+.custom-navbar .nav-link:visited,
+.custom-navbar .navbar-brand,
+.custom-navbar .fa-bars {
+    color: #ffffff;
+    font-weight: 500;
+}
+
+.custom-navbar .nav-item {
+    margin-left: 15px;
+}
+
+/* Hover par thora light white effect */
+.custom-navbar .nav-link:hover {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* Logo Styling */
+.navbar-brand {
+    color: white !important;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+/* banner section styling */
+.banner {
+    background-image: url(/media/bg_1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    width: 100%;
+    padding-top: 100px;
+}
+
+.banner-data {
+    padding-top: 100px;
+}
+
+.span-tag {
+    background-color: #ffffff;
+    /* White background */
+    color: #1a73e8;
+    /* Blue text color (apni marzi ka blue laga lein) */
+    font-weight: bold;
+    font-size: 16px;
+    padding: 8px 16px;
+    /* Box ke andar ki space */
+    border-radius: 4px;
+}
+
+.banner-h1 {
+    font-size: 45px;
+    margin-top: 15px;
+}
+
+.banner-data p {
+    font-size: 17px;
+    color: var(--light-white);
+}
+
+.banner-btn1 {
+    padding: 10px 30px;
+    border-radius: 5px;
+    background-color: #0779e4;
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    font-size: 13px;
+}
+
+.banner-btn1:hover {
+    color: white;
+}
+
+.banner-btn2:hover {
+    color: #0779e4;
+}
+
+.banner-btn2 {
+    padding: 10px 30px;
+    background-color: white;
+    color: #0779e4;
+    border: 2px solid #e5e7eb;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 13px;
+}
+
+.banner-links a {
+    font-size: 14px;
+    font-weight: 500;
+    color: white;
+}
+
+.banner-links a:hover {
+    color: white;
+}
+
+/* -----about me section stying---- */
+.about-img-custom {
+    height: 600px !important;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Decorative Colors Box */
+.color-blocks {
+    position: absolute;
+    left: -30px;
+    bottom: 40px;
+    width: 40px;
+    height: 180px;
+    background: linear-gradient(to bottom, #7bc2ff 50%, #46a1ff 50%);
+    z-index: 0;
+}
+
+/* 1. Default Halat (Text color Secondary) */
+.custom-about-tabs .nav-link {
+    color: #6c757d !important;
+    background-color: transparent;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.custom-about-tabs .nav-link:hover {
+    color: #ffffff !important;
+    background-color: #0d6efd;
+}
+
+.custom-about-tabs .nav-link.active {
+    color: #ffffff !important;
+    background-color: #0d6efd !important;
+}
+
+.custom-about-tabs .nav-item {
+    border-radius: 8px;
+    background-color: white !important;
+}
+
+/* about section mey skills section */
+.progress {
+    height: 9px !important;
+}
+
+.progress .progress-bar {
+    background-color: var(--dark-blue);
+}
+
+.about-skills {
+    font-size: 15px;
+    font-weight: 600 !important;
+}
+
+/* -------service section styling---------- */
+.heading h2 {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.service-card {
+    padding: 20px 30px;
+    background-color: white;
+    border-radius: 2px;
+}
+
+.service-card-icon {
+    height: 60px;
+    width: 60px;
+    background-color: var(--dark-blue);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.service-card-icon i {
+    font-size: 30px;
+}
+
+.service-counter {
+    background-image: url(/media/bg_3.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 80px 0px;
+    position: relative;
+    z-index: 1;
+}
+
+.service-counter::before {
+    content: "";
+    background-color: var(--dark-blue);
+    opacity: 0.88;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.counter-icon {
+    font-size: 50px;
+}
+
+.counter-data span {
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.counter-data p {
+    color: var(--light-white);
+}
+
+/* ----------portfolio section styling----- */
+.portfolio-img {
+    height: 350px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.portfolio-item {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.portfolio-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--dark-blue);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    /* Shuru mein bilkul gaib (invisible) hoga */
+}
+
+.portfolio-item:hover .portfolio-overlay {
+    opacity: 0.88;
+    /* Overlay show ho jaye */
+    transition: 0.25s;
+}
+
+/* testimonial section styling */
+
+.custom-dots {
+    bottom: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+.custom-dots button {
+    width: 10px !important;
+    height: 10px !important;
+    border-radius: 50% !important;
+    background-color: #cfd4da !important;
+    border: none !important;
+    margin: 0 6px !important;
+    opacity: 1 !important;
+    transition: all 0.3s ease;
+}
+
+/* Jab dot select (active) ho toh Blue color aaye */
+.custom-dots button.active {
+    background-color: #0d6efd !important;
+}
+
+/* ---------our blog section styling------ */
+.blog-card-img {
+    object-fit: cover;
+    background-position: center;
+    height: 300px;
+}
+
+/* ---------pricing card section styling---------- */
+.pricing-card {
+    /* padding: 20px 10px; */
+    background-color: white;
+    border-radius: 8px;
+
+}
+
+.most-popular-badge {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* Badge ko perfect center mein upar set karega */
+    background-color: #ff6b6b;
+    /* Red/Pink color jaisa tasveer mein hai */
+    color: white;
+    padding: 8px 25px;
+    font-weight: bold;
+    font-size: 13px;
+    border-radius: 50px;
+    /* Mukammal gol konay */
+    white-space: nowrap;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* White borders on blue background */
+.pricing-pro-card .border-bottom {
+    border-color: rgba(255, 255, 255, 0.15) !important;
+}
+
+.pricing-pro-card {
+    transform: scale(1.08);
+    z-index: 10;
+    /* Taake shadow aur card side waalon ke upar aaye */
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.2) !important;
+}
+
+
+/* contact section styling */
+.contact-info {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+
+.form_btn button {
+    padding: 8px 15px;
+    background-color: var(--dark-blue);
+    border-radius: 5px;
+    border: none;
+    color: white;
+    font-size: 12px;
+}
+
+.contact-link li a {
+    display: inline-block;
+    white-space: nowrap;
+    /* Text ko ek line mein rakhta hai */
+}
+
+/* Mobile ke liye font size thora kam karein agar zarurat ho */
+@media (max-width: 575px) {
+    .contact-link li a {
+        font-size: 10px;
+    }
+}
+
+.contact-me-btn {
+    /* Mobile par padding kam rakhein */
+    padding: 15px 20px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    /* light-white ka substitute */
+    font-size: 13px;
+    font-weight: 600;
+    display: inline-block;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.contact-me-btn:hover {
+    background-color: white;
+    color: black !important;
+    transition: 0.25s;
+}
+
+/*---------- footer section styligng------- */
+.footer {
+    background-color: #eeeeee;
+    padding: 80px 0px;
+}
+
+.list-icon {
+    background-color: var(--dark-blue);
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.list-icon a {
+    color: white;
+}
+
+.list-icon:hover a {
+    color: white;
+}
+
+.footer-service-list li a:hover {
+    color: var(--dark-blue) !important;
+}
+
+.footer-rights {
+    padding: 50px 0px;
+    background-color: #e9e9e9;
+}
+
+
+
+
+
+
+/* -------------media queries------------ */
+/* ========================================================
+   2. DESKTOP SCREENS (LG & Above - Transparent to Blue)
+   ======================================================== */
+@media (min-width: 992px) {
+
+    /* Badi screen par shuru mein transparent (banner mein mix) */
+    .custom-navbar {
+        background-color: transparent !important;
+        box-shadow: none !important;
+        /* Shuru mein shadow nahi hoga */
+        padding: 20px 0 !important;
+        /* Thora khula khula lagay */
+    }
+
+    /* Badi screen par jab Scroll ho tab Blue color aaye */
+    .custom-navbar.scrolled {
+        background-color: #0779e4 !important;
+        padding: 15px 0 !important;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1) !important;
+    }
+}
+
+@media (max-width:767px) {
+    .section-distance {
+        padding: 50px 15px !important;
+    }
+
+    .heading h2 {
+        font-size: 25px;
+    }
+
+    .banner h1 {
+        font-size: 30px;
+    }
+
+    .banner {
+        padding: 50px 15px;
+        min-height: 60vh;
+    }
+
+    .contact-me {
+        padding: 0px 15px;
+    }
+}
+
+@media (min-width: 992px) {
+    .banner {
+        background-position: top center;
+        padding-top: 120px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .heading h2 {
+        font-size: 30px;
+    }
+
+    .banner h1 {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 991px) {
+    .pricing-pro-card {
+        transform: scale(1);
+        /* Mobile par normal size */
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+}
+
+@media (min-width: 992px) {
+    .contact-me-btn {
+        padding: 15px 80px;
+        /* Desktop par bada dikhayi dega */
+    }
+}
